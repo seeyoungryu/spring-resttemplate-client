@@ -79,9 +79,12 @@ public class RestTemplateService {
     }
 
     /*
-    위 코드는 Spring의 RestTemplate을 사용하여 외부 서버에 GET 요청을 보내고, 응답을 처리하는 예제입니다.
-    이 메서드는 query 파라미터를 받아 요청 URL을 구성하고, 그 URL로 GET 요청을 보낸 후 응답을 ItemDto 객체로 반환합니다.
-
+       전체 코드 요약
+    주어진 query 파라미터를 사용하여 URI를 구성합니다.
+    구성된 URI를 로그에 출력합니다.
+    구성된 URI로 GET 요청을 보내고 응답을 ResponseEntity<ItemDto> 객체로 받습니다.
+    응답 상태 코드를 로그에 출력합니다.
+    응답 본문을 ItemDto 객체로 반환합니다.
      */
 
 
