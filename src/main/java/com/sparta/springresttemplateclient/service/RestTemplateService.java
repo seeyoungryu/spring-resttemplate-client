@@ -32,7 +32,7 @@ public class RestTemplateService {
         URI uri = UriComponentsBuilder
                 .fromUriString("http://localhost:7070")
                 .path("/api/server/get-call-obj")
-                .queryParam("query", query)
+                .queryParam("query", query)    //path에 ? 달고 쿼리 보내는 방식
                 .encode()
                 .build()
                 .toUri();
