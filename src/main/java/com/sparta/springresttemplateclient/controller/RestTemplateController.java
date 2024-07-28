@@ -18,6 +18,10 @@ public class RestTemplateController {
     public RestTemplateController(RestTemplateService restTemplateService) {
         this.restTemplateService = restTemplateService;
     }
+    //private final RestTemplateService restTemplateService: RestTemplateService 타입의 필드로, 외부 API 호출을 처리하는 서비스 클래스입니다.
+    //생성자를 통해 RestTemplateService를 주입받습니다. 이는 의존성 주입(Dependency Injection)의 한 형태입니다.
+
+
 
     @GetMapping("/get-call-obj")
     public ItemDto getCallObject(String query) {
